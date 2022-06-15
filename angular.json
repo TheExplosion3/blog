@@ -108,7 +108,7 @@
             "ssr": false,
             "browserTarget": "blog:build:production",
             "firebaseProject": "my-blog-baa8d",
-            "firebaseHostingSite": "my-blog-baa8d"
+            "firebaseHostingSite": "archangel"
           }
         }
       }

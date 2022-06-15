@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
@@ -11,7 +10,7 @@ export class HomepageComponent implements OnInit {
   twitterurl = 'https://twitter.com/ArchangelEuropa';
   githuburl = 'https://github.com/TheExplosion3';
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }

@@ -4,6 +4,7 @@
 @use '@angular/material' as mat;
 // Plus imports for other components in your app.
 @use 'sass:map';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
@@ -84,7 +85,7 @@ $blog-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($blog-theme);
 
-html, body { height: 100%; }
+html, body { height: 100%; background-color: black }
 body { margin: 0; font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif }
 
 
