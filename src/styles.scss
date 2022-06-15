@@ -1,0 +1,94 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+@use 'sass:map';
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+$unusual-palette: (
+    50: #eee6f3,
+    100: #d3c1e1,
+    200: #b699ce,
+    300: #9a6fbb,
+    400: #8650ac,
+    500: #72319e,
+    600: #6a2c98,
+    700: #5e238f,
+    800: #541d87,
+    900: #440f7a,
+    contrast: (
+        50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white
+    )
+);
+
+$analog-unusual-pallete: (
+    50: #eaeaf5,
+    100: #cacae7,
+    200: #8686c5,
+    300: #6d6bb9,
+    400: #8650ac,
+    500: #5850ac,
+    600: #5148a2,
+    700: #493e96,
+    800: #41348a,
+    900: #352274,
+    contrast: (
+        50: rgba(black, 0.87),
+        100: rgba(black, 0.87),
+        200: rgba(black, 0.87),
+        300: white,
+        400: white,
+        500: white,
+        600: white,
+        700: white,
+        800: white,
+        900: white
+    )
+);
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$blog-primary: mat.define-palette($unusual-palette);
+$blog-accent: mat.define-palette($analog-unusual-pallete);
+
+// The warn palette is optional (defaults to red).
+$blog-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$blog-theme: mat.define-light-theme((
+  color: (
+    primary: $blog-primary,
+    accent: $blog-accent,
+    warn: $blog-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($blog-theme);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif }
+
+
+@font-face {
+    font-family: "Oxygen";
+    src: local("Oxygen"), url(./assets/fonts/Oxygen/Oxygen-Regular.ttf), format("truetype");
+}

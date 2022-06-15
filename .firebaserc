@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "my-blog-baa8d"
+  },
+  "targets": {
+    "my-blog-baa8d": {
+      "hosting": {
+        "blog": [
+          "my-blog-baa8d"
+        ]
+      }
+    }
+  }
+}

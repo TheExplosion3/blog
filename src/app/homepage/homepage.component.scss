@@ -1,0 +1,30 @@
+$myPurple: #8650ac;
+$myBlue: #080078;
+
+@mixin fontandcolor($fontsize, $fontcolor) {
+    font-size: $fontsize;
+    color: $fontcolor;
+}
+
+* {
+    text-align:center/left/right;
+    font-family: "Oxygen", Arial, Helvetica, sans-serif;
+}
+
+.mat-toolbar {
+    @include fontandcolor(24px, $myBlue);
+}
+.h2 {
+    @include fontandcolor(24px, $myBlue);
+}
+.body {
+    @include fontandcolor(15px, $myBlue);
+
+    .div {
+
+        .p {
+            font-style: italic;
+            color: $myPurple;
+        }
+    }
+}
