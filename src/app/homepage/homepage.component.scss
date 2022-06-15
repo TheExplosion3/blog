@@ -1,5 +1,10 @@
+//variables-------------------------------------------------------------------\\
+
 $myPurple: #8650ac;
-$myBlue: #080078;
+$myBlue: #0b00a7;
+$headerBlue: #080078;
+
+//mixins----------------------------------------------------------------------\\
 
 @mixin fontandcolor($fontsize, $fontcolor) {
     font-size: $fontsize;
@@ -11,15 +16,15 @@ $myBlue: #080078;
     text-align: center;
 }
 
+//rules------------------------------------------------------------------------\\
+
 * {
     text-align:center/left/right;
     font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif !important;
 }
 
-
-
 .mat-toolbar {
-    @include fontandcolor(24px, $myBlue);
+    @include fontandcolor(24px, $headerBlue);
 }
 h2 {
     font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif;
@@ -31,10 +36,18 @@ body {
     @include fontandcolor(2em, $myBlue);
 
     div {
+        color: $myPurple;
         p {
             line-height: 50px;
             font-style: italic;
-            color: $myPurple;
+            a:active {
+                color: #7a007d;
+            }
+        }
+        #two {
+            margin-top: 2.5%;
+            line-height: 50px;
+            margin-inline: 25%;
         }
     }
 }
