@@ -1,0 +1,39 @@
+$myPurple: #8650ac;
+$myBlue: #0b00a7;
+$headerBlue: #080078;
+
+@mixin fontandcolor($fontsize, $fontcolor) {
+    font-size: $fontsize;
+    color: $fontcolor;
+}
+
+* {
+    text-align:center/left/right;
+    font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif !important;
+}
+
+header {
+    text-align:center;
+    h2 {
+        @include fontandcolor(50px, $headerBlue);
+    }
+
+    h3 {
+        @include fontandcolor(2em, $myBlue);
+    }
+}
+
+
+body {
+    text-align: center;
+    div {
+
+        article {
+            @include fontandcolor(0.5em, $myPurple);
+            text-align: center;
+            p {
+                text-align: left;
+            }
+        }
+    }
+}

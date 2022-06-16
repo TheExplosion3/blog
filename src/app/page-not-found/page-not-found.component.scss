@@ -1,0 +1,21 @@
+$myPurple: #8650ac;
+$myBlue: #0b00a7;
+$headerBlue: #080078;
+
+@mixin fontandcolor($fontsize, $fontcolor) {
+    font-size: $fontsize;
+    color: $fontcolor;
+}
+
+* {
+    @include fontandcolor(24px, $myPurple);
+    text-align: center;
+    line-height: 50px;
+}
+
+p {
+    @include fontandcolor(2em, $myPurple);
+    a:active {
+        color: #7a007d;
+    }
+}
