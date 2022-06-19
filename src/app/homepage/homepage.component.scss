@@ -3,6 +3,7 @@
 $myPurple: #8650ac;
 $myBlue: #0b00a7;
 $headerBlue: #080078;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 //mixins----------------------------------------------------------------------\\
 
@@ -44,7 +45,7 @@ body {
                 color: #7a007d;
             }
         }
-        #two {
+        #main {
             margin-top: 2.5%;
             line-height: 50px;
             margin-inline: 25%;

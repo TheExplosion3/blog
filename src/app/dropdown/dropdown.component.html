@@ -1,17 +1,21 @@
-<div>
+<div id="one">
     <h4>
         Select a post to get reading!
     </h4>
     <mat-form-field appearance="fill" color="accent">
         <mat-label>Select a Post</mat-label>
         <mat-select [(value)]="selected" panelClass="primclass">
-            <mat-option>
+            <mat-option value="none">
                 None
             </mat-option>
-            <mat-option value=app-pageone>
+            <mat-option value={{pageOne}}>
                 Post One
             </mat-option>
-
         </mat-select>
-      </mat-form-field>
+    </mat-form-field>
+</div>
+<div id="three" class="pages">
+    <app-pageone>
+
+    </app-pageone>
 </div>

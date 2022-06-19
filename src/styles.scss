@@ -110,11 +110,12 @@ $blog-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($blog-theme);
 
-html, body { background-color: black }
-body { margin: 0; font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif }
-
-
 @font-face {
     font-family: "Oxygen";
     src: local("Oxygen"), url(./assets/fonts/Oxygen/Oxygen-Regular.ttf), format("truetype");
 }
+
+html, body { background-color: black }
+body { margin: 0; font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif !important }
+
+

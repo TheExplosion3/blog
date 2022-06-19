@@ -11,18 +11,18 @@ import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatOptionModule } from '@angular/material/core';
 import { MatSelectModule } from '@angular/material/select'
 
-import { PageoneComponent } from './pageone/pageone.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
+import { PageoneComponent } from './dropdown/pageone/pageone.component';
 
 @NgModule({
   declarations: [
     HomepageComponent,
     AppComponent,
-    PageoneComponent,
     PageNotFoundComponent,
-    DropdownComponent
+    DropdownComponent,
+    PageoneComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +36,6 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     BrowserModule,
     RouterModule.forRoot([
       {path: 'home-page', component: HomepageComponent},
-      {path: 'post-one', component: PageoneComponent},
       {path: '', redirectTo: '/home-page', pathMatch: 'full'},
       {path: '**', component: PageNotFoundComponent}
     ]),

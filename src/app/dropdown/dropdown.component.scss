@@ -3,6 +3,7 @@
 $myPurple: #8650ac;
 $myBlue: #0b00a7;
 $headerBlue: #080078;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 //mixins----------------------------------------------------------------------\\
 
@@ -21,6 +22,7 @@ $headerBlue: #080078;
 h4 {
     @include centerandspacing(auto);
     @include fontandcolor(24px, $myPurple);
+    font-family: Oxygen
 }
 
 div {
@@ -38,7 +40,10 @@ div {
             color: $myPurple;
         }
     }
-    ::ng-deep .mat-form-field {
+    ::ng-deep.mat-form-field {
+
+        font-family: Oxygen;
+
         .mat-input-element {
             color: $myPurple;
         }
@@ -54,10 +59,13 @@ div {
         .mat-form-field-required-marker {
             color: $myPurple;
         }
-    }
-    .mat-option {
-        color: $myPurple;
-        color: $myBlue;
+        .mat-option {
+            color: $myPurple;
+        }
+        .mat-select-value {
+            font-family: Oxygen;
+            color: $myPurple;
+        }
     }
     .mat-form-field-empty.mat-form-field-label {
         color: $myPurple;

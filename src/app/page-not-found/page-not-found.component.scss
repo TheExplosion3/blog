@@ -3,6 +3,7 @@
 $myPurple: #8650ac;
 $myBlue: #0b00a7;
 $headerBlue: #080078;
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
 
 //mixins----------------------------------------------------------------------\\
 
@@ -17,6 +18,7 @@ $headerBlue: #080078;
     @include fontandcolor(24px, $myPurple);
     text-align: center;
     line-height: 50px;
+    font-family: Oxygen;
 }
 
 p {
