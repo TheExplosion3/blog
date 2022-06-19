@@ -11,7 +11,7 @@ $headerBlue: #080078;
     color: $fontcolor;
 }
 
-@mixin centerandspacing($distance, $alignment) {
+@mixin centerandspacing($distance) {
     margin-top: $distance;
     text-align: center;
 }
@@ -28,11 +28,11 @@ $headerBlue: #080078;
 }
 h2 {
     font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif;
-    @include centerandspacing(2.5%, center);
+    @include centerandspacing(2.5%);
     @include fontandcolor(50px, $myBlue);
 }
 body {
-    @include centerandspacing(2.5%, center);
+    @include centerandspacing(5%);
     @include fontandcolor(2em, $myBlue);
 
     div {

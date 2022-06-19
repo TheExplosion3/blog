@@ -110,7 +110,7 @@ $blog-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($blog-theme);
 
-html, body { height: 100%; background-color: black }
+html, body { background-color: black }
 body { margin: 0; font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif }
 
 

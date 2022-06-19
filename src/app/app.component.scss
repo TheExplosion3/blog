@@ -3,6 +3,10 @@ $myBlue: #0b00a7;
 $headerBlue: #080078;
 
 hr {
-    color: $headerBlue;
-    margin-inline: 5%;
+    background-color: $headerBlue;
+    height: 3px;
+    border: 2px solid $headerBlue;
+    border-radius: 25px;
+    margin-inline: 15%;
+    margin-bottom: 5%;
 }

@@ -1,0 +1,68 @@
+//variables-------------------------------------------------------------------\\
+
+$myPurple: #8650ac;
+$myBlue: #0b00a7;
+$headerBlue: #080078;
+
+//mixins----------------------------------------------------------------------\\
+
+@mixin fontandcolor($fontsize, $fontcolor) {
+    font-size: $fontsize;
+    color: $fontcolor;
+}
+
+@mixin centerandspacing($distance) {
+    margin-top: $distance;
+    text-align: center;
+}
+
+//rules------------------------------------------------------------------------\\
+
+h4 {
+    @include centerandspacing(auto);
+    @include fontandcolor(24px, $myPurple);
+}
+
+div {
+
+    margin-bottom: 5%;
+    @include centerandspacing(auto);
+    * {
+        color: $myPurple;
+    }
+    .mat-label {
+        margin-top: auto;
+    }
+    .mat-form-field {
+        * {
+            color: $myPurple;
+        }
+    }
+    ::ng-deep .mat-form-field {
+        .mat-input-element {
+            color: $myPurple;
+        }
+        .mat-form-field-label {
+            color: $myPurple;
+        }
+        .mat-form-field-underline {
+            background-color: $myPurple;
+        }
+        .mat-form-field-ripple {
+            background-color: $myPurple;
+        }
+        .mat-form-field-required-marker {
+            color: $myPurple;
+        }
+    }
+    .mat-option {
+        color: $myPurple;
+        color: $myBlue;
+    }
+    .mat-form-field-empty.mat-form-field-label {
+        color: $myPurple;
+    }
+    .mat-form-field-underline {
+        background-color: $myPurple;
+    }
+}

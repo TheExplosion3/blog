@@ -4,18 +4,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field'
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select'
+
 import { PageoneComponent } from './pageone/pageone.component';
 import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
 
 @NgModule({
   declarations: [
     HomepageComponent,
     AppComponent,
     PageoneComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    DropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +30,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatOptionModule,
+    MatSelectModule,
     BrowserModule,
     RouterModule.forRoot([
       {path: 'home-page', component: HomepageComponent},
