@@ -1,11 +1,17 @@
+//variables-------------------------------------------------------------------\\
+
 $myPurple: #8650ac;
 $myBlue: #0b00a7;
 $headerBlue: #080078;
+
+//mixins----------------------------------------------------------------------\\
 
 @mixin fontandcolor($fontsize, $fontcolor) {
     font-size: $fontsize;
     color: $fontcolor;
 }
+
+//rules------------------------------------------------------------------------\\
 
 * {
     @include fontandcolor(24px, $myPurple);
