@@ -15,14 +15,24 @@ $headerBlue: #080078;
 //rules------------------------------------------------------------------------\\
 
 * {
-    @include fontandcolor(24px, $myPurple);
     text-align: center;
     line-height: 50px;
     font-family: Oxygen;
 }
-
+.mat-toolbar {
+    @include fontandcolor(24px, $headerBlue);
+}
+h1 {
+    color: $myPurple;
+    margin-top: 25%;
+    font-size: 32px
+}
 p {
     @include fontandcolor(2em, $myPurple);
+    a {
+        color: $myPurple;
+        font-style: italic;
+    }
     a:active {
         color: #7a007d;
     }

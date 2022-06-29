@@ -15,6 +15,7 @@ import { RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { PageoneComponent } from './dropdown/pageone/pageone.component';
+import { PagetwoComponent } from './dropdown/pagetwo/pagetwo.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PageoneComponent } from './dropdown/pageone/pageone.component';
     AppComponent,
     PageNotFoundComponent,
     DropdownComponent,
-    PageoneComponent
+    PageoneComponent,
+    PagetwoComponent
   ],
   imports: [
     BrowserModule,

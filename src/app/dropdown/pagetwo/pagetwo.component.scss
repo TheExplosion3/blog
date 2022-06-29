@@ -36,10 +36,19 @@ body {
         article {
             @include fontandcolor(1.5em, $myPurple);
             text-align: center;
+            h5 {
+                @include fontandcolor(1.5em, $myBlue);
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+                text-align: match-parent;
+            }
             p {
                 margin-inline: 5%;
                 line-height: 32px;
                 text-align: match-parent;
+            }
+            #ptwoone {
+                margin-bottom: -1.25%;
             }
         }
     }

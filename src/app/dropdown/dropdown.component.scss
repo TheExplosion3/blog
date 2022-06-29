@@ -21,56 +21,43 @@ $headerBlue: #080078;
 
 h4 {
     @include centerandspacing(auto);
-    @include fontandcolor(24px, $myPurple);
-    font-family: Oxygen
+    color: $myPurple !important;
+    font-size: 24px !important;
+    font-family: Oxygen !important;
+    margin-bottom: 2% !important;
 }
 
 div {
-
-    margin-bottom: 5%;
+    margin-bottom: 2.5%;
     @include centerandspacing(auto);
     * {
-        color: $myPurple;
+        font-family: Oxygen;
     }
     .mat-label {
         margin-top: auto;
     }
     .mat-form-field {
         * {
+            text-align: left;
             color: $myPurple;
         }
     }
-    ::ng-deep.mat-form-field {
-
-        font-family: Oxygen;
-
-        .mat-input-element {
-            color: $myPurple;
-        }
-        .mat-form-field-label {
-            color: $myPurple;
-        }
-        .mat-form-field-underline {
-            background-color: $myPurple;
-        }
-        .mat-form-field-ripple {
-            background-color: $myPurple;
-        }
-        .mat-form-field-required-marker {
-            color: $myPurple;
-        }
-        .mat-option {
-            color: $myPurple;
-        }
-        .mat-select-value {
-            font-family: Oxygen;
-            color: $myPurple;
-        }
-    }
-    .mat-form-field-empty.mat-form-field-label {
+    .mat-option {
         color: $myPurple;
+        text-align: center;
+        background:black !important;
+        .bottom-border-class {
+            border: 0px solid black !important;
+        }
     }
-    .mat-form-field-underline {
-        background-color: $myPurple;
+    .mat-select-value {
+        color: #a70e91 !important;
+    }
+    ::ng-deep {
+        .mat-select-value {
+            color: #a70e91 !important;
+        }
     }
 }
+
+

@@ -2,20 +2,24 @@
     <h4>
         Select a post to get reading!
     </h4>
-    <mat-form-field appearance="fill" color="accent">
+    <mat-form-field appearance="fill" color="warn" class="mat-elevation-z0">
         <mat-label>Select a Post</mat-label>
-        <mat-select [(value)]="selected" panelClass="primclass">
+        <mat-select [(value)]="selected" class="mat-elevation-z0">
             <mat-option value="none">
                 None
             </mat-option>
             <mat-option value={{pageOne}}>
-                Post One
+                The First Post
+            </mat-option>
+            <mat-option value={{pageTwo}}>
+                Updates
             </mat-option>
         </mat-select>
     </mat-form-field>
 </div>
 <div id="three" class="pages">
-    <app-pageone>
-
-    </app-pageone>
+    <app-pageone></app-pageone>
+</div>
+<div id="four" class="pages">
+    <app-pagetwo></app-pagetwo>
 </div>

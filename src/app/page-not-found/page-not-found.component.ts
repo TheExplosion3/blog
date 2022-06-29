@@ -10,6 +10,7 @@ export class PageNotFoundComponent implements OnInit {
   constructor() { }
 
   homepageurl = "www.archangelofeuropa.xyz";
+  title = 'Evelyn\'s Blog';
 
   ngOnInit(): void {
   }

@@ -19,16 +19,20 @@ $headerBlue: #080078;
 
 //rules------------------------------------------------------------------------\\
 
-* {
-    text-align:center/left/right;
-    font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif !important;
+hr {
+    background-color: $headerBlue;
+    height: 3px;
+    border: 2px solid $headerBlue;
+    border-radius: 25px;
+    margin-inline: 15%;
+    margin-bottom: 2.5%;
 }
-
 .mat-toolbar {
+    font-family: Oxygen;
     @include fontandcolor(24px, $headerBlue);
 }
 h2 {
-    font-family: "Oxygen", "Helvetica Neue", Helvetica, sans-serif;
+    font-family: Oxygen;
     @include centerandspacing(2.5%);
     @include fontandcolor(50px, $myBlue);
 }
@@ -51,4 +55,7 @@ body {
             margin-inline: 25%;
         }
     }
+}
+app-dropdown {
+    font-size: 16px;
 }
